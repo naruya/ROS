@@ -1,2 +1,2 @@
-set(basics_MESSAGE_FILES "/home/nama/NamaGarage/lab/ros/catkin_ws/src/basics/msg/Complex.msg")
-set(basics_SERVICE_FILES "")
+set(basics_MESSAGE_FILES "/home/nama/NamaGarage/lab/ROS/catkin_ws/src/basics/msg/Complex.msg;/home/nama/NamaGarage/lab/ROS/catkin_ws/devel/share/basics/msg/TimerAction.msg;/home/nama/NamaGarage/lab/ROS/catkin_ws/devel/share/basics/msg/TimerActionGoal.msg;/home/nama/NamaGarage/lab/ROS/catkin_ws/devel/share/basics/msg/TimerActionResult.msg;/home/nama/NamaGarage/lab/ROS/catkin_ws/devel/share/basics/msg/TimerActionFeedback.msg;/home/nama/NamaGarage/lab/ROS/catkin_ws/devel/share/basics/msg/TimerGoal.msg;/home/nama/NamaGarage/lab/ROS/catkin_ws/devel/share/basics/msg/TimerResult.msg;/home/nama/NamaGarage/lab/ROS/catkin_ws/devel/share/basics/msg/TimerFeedback.msg")
+set(basics_SERVICE_FILES "/home/nama/NamaGarage/lab/ROS/catkin_ws/src/basics/srv/WordCount.srv")
