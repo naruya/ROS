@@ -8,6 +8,7 @@ project(basics)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
+  roscpp
   rospy
   std_msgs
   message_generation
@@ -204,3 +205,23 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+
+
+# cpp topic
+add_executable(topic_publisher_cpp src/topic_publisher_cpp.cpp)
+target_link_libraries(topic_publisher_cpp ${catkin_LIBRARIES})
+add_dependencies(topic_publisher_cpp beginner_tutorials_generate_messages_cpp)
+
+add_executable(topic_subscriber_cpp src/topic_subscriber_cpp.cpp)
+target_link_libraries(topic_subscriber_cpp ${catkin_LIBRARIES})
+add_dependencies(topic_subscriber_cpp beginner_tutorials_generate_messages_cpp)
+
+# cpp service
+add_executable(service_server_cpp src/service_server_cpp.cpp)
+target_link_libraries(service_server_cpp ${catkin_LIBRARIES})
+add_dependencies(service_server_cpp beginner_tutorials_gencpp)
+
+add_executable(service_client_cpp src/service_client_cpp.cpp)
+target_link_libraries(service_client_cpp ${catkin_LIBRARIES})
+add_dependencies(service_client_cpp beginner_tutorials_gencpp)
